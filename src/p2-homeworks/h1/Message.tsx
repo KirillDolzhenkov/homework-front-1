@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./Message.module.css";
 
 type MessagePropsType = {
     avatar: string
@@ -7,16 +8,20 @@ type MessagePropsType = {
     time: string
 }
 
-export const  Message: React.FC<MessagePropsType> = (props) => {
+const Message: React.FC<MessagePropsType> = (props) => {
     return (
-        <div>
+        <div className={styles.message}>
             <div>
-                <img src={props.avatar} className="img"/>
+                <img className={styles.img} src={props.avatar}/>
             </div>
             <div>{props.name}</div>
-            <div> {props.message}</div>
-            <div>{props.time}</div>
+            <span>{props.message} </span>
+            <span>{props.time}</span>
+
         </div>
     )
 }
 
+export {
+    Message
+}
