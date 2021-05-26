@@ -21,7 +21,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             {/*<span >{error}</span>*/}
             <button onClick={addUser}>add</button>
             <span> {totalUsers}</span>
-            <div className={inputClass}>{error}</div>
+            <div className={s.errorText}>{error}</div>
         </div>
     )
 }
