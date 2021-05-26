@@ -5,7 +5,7 @@ type GreetingPropsType = {
     name: string // need to fix any
     setNameCallback: (event:  ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: () => void // need to fix any
-    error: string // need to fix any
+    error: boolean // need to fix any
     totalUsers: number // need to fix any
 }
 
@@ -21,7 +21,8 @@ const Greeting: React.FC<GreetingPropsType> = (
             {/*<span >{error}</span>*/}
             <button onClick={addUser}>add</button>
             <span> {totalUsers}</span>
-            <div className={s.errorText}>{error}</div>
+            {/*<div className={s.errorText}>{error}</div>*/}
+            {error && <div className={s.errorText}>error, please enter correct value {error}</div>}
         </div>
     )
 }
