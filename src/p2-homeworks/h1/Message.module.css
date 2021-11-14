@@ -1,81 +1,43 @@
-/*:root {
-    --main-light-color: #f9bbb1;
-    --main-dark-color: #481b0b;
-    --main-background-color: black;
-}
-
 .message {
     margin: 10px 0 0 10px;
-    width: 80vh;
-    height: 80vh;
-    border: solid black;
+    /* border: 1px solid gray;*/
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    text-align: center;
+    justify-content: start;
+    align-items: end;
 }
 
-.img{
+.message img {
     display: flex;
-    height: 100px;
-    width: 100px;
-}
-
-.messageBlock {
-
-    !*border: solid black;*!
-    height: 20%;
-    width: 40%;
-    background-color: var(--main-dark-color);
-    border-radius: 10%;
-}
-
-
-.leftPoint{
-    width: 0;
-    height: 0;
-    border-left: 2vh solid transparent;
-    border-right: 2vh solid transparent;
-    border-top: 10vh solid var(--main-dark-color);
-    top: 45%;
-    left: -10%;
-    transform: rotate(60deg);
-}*/
-.message {
-    margin: 10px 0 0 10px;
-
-}
-
-.img {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
     border: 1px solid gray;
     float: left;
     margin: 48px 10px 0 0;
 }
 
 .content {
-    height: 55px;
-    width: 190px;
-    background-color: #082103;
+    line-height: 24px;
+    min-height: 67px;
+    width: 390px;
+    background-color: #082103;;
     float: left;
     margin-top: 30px;
+    padding-top: 10px;
     border-radius: 5px;
     padding-left: 10px;
-    padding-top: 5px;
 }
 
 .content::after {
     content: "";
-    z-index: 0;
-    position: absolute;
-    top: 140px;
-    left: 57px;
+    position: relative;
+    left: -20px;
+    top: -28.5px;
+    z-index: 1;
     border: 10px solid transparent;
-    border-right: 10px solid #082103;
-    border-bottom: 10px solid #082103;
+    border-right: 10px solid #082103;;
+    border-bottom: 10px solid #082103;;
 }
 
 .name {
@@ -89,14 +51,9 @@
 }
 
 .time {
+    display: flex;
     color: #63855c;
-    position: relative;
-    left: 155px;
-    bottom: 2px;
-    z-index: 1;
+    justify-content: right;
+    padding-right: 5px;
     font-size: 12px;
-}
-
-.clear {
-    clear: both;
 }
