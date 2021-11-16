@@ -1,6 +1,7 @@
 .message {
-    margin: 10px 0 0 10px;
-    /* border: 1px solid gray;*/
+    padding: 5px;
+    /*margin: 10px 0 0 10px;*/
+    /*border: 1px solid gray;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -18,13 +19,13 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     line-height: 24px;
-    min-height: 67px;
     width: 390px;
-    background-color: #082103;;
-    float: left;
-    margin-top: 30px;
-    padding-top: 10px;
+    background-color: #082103;
+    margin-top: 10px;
+    margin-bottom: 5px;
     border-radius: 5px;
     padding-left: 10px;
 }
@@ -34,10 +35,11 @@
     position: relative;
     left: -20px;
     top: -28.5px;
-    z-index: 1;
+    /*z-index:  1;*/
     border: 10px solid transparent;
-    border-right: 10px solid #082103;;
-    border-bottom: 10px solid #082103;;
+    /*border-right: 10px solid #edeef0;*/
+    border-bottom: 10px solid #082103;
+    width: 1px;
 }
 
 .name {
@@ -46,8 +48,9 @@
 }
 
 .text {
-    color: #D8ECD3;
+    color: #fff;
     font-size: 13px;
+    word-wrap: break-word;
 }
 
 .time {
@@ -56,4 +59,7 @@
     justify-content: right;
     padding-right: 5px;
     font-size: 12px;
+    /*border: 1px solid gray;*/
+    /* position: relative;
+     top: 22px;*/
 }
