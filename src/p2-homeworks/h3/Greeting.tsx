@@ -1,4 +1,5 @@
 import React, {ChangeEvent} from 'react'
+import styles from './Greeting.module.css'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
@@ -10,18 +11,23 @@ type GreetingPropsType = {
 }
 
 // презентационная компонента (для верстальщика)
-const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
-) => {
+const Greeting: React.FC<GreetingPropsType> = (props ) => {
+
+    const {
+        name,
+        setNameCallback,
+        addUser,
+        error,
+        totalUsers
+    } = props; // деструктуризация пропсов
+
     const inputClass = error ? s.error : ''; // need to fix with (?:)
 
     return (
-        <div>
+        <div className={styles.greetItems}>
             <input value={name} onChange={setNameCallback} className={inputClass}/>
-            {/*<span >{error}</span>*/}
             <button onClick={addUser}>add</button>
             <span> {totalUsers}</span>
-            {/*<div className={s.errorText}>{error}</div>*/}
             {error && <div className={s.errorText}>error, please enter correct value {error}</div>}
         </div>
     )

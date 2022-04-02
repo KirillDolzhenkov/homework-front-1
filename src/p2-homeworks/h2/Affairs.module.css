@@ -1,3 +1,23 @@
 .someClass {
+    padding: 10px;
+}
 
+.affairs {
+    display: flex;
+    flex-direction: column;
+}
+
+.affairs button {
+    margin-left: 5px;
+}
+
+.filters {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.filters button {
+    margin-right: 5px;
 }

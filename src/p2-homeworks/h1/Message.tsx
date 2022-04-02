@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "./Message.module.css";
 
-type MessagePropsType = {
+export type MessagePropsType = {
     avatar: string
     name: string
     message: string
@@ -10,13 +10,20 @@ type MessagePropsType = {
 
 const Message: React.FC<MessagePropsType> = (props) => {
 
+    const {
+        avatar,
+        name,
+        message,
+        time,
+    } = props;
+
     return (
         <div className={s.message}>
-            <img className={s.img} alt='Текст' src={props.avatar}/>
+            <img className={s.img} alt='Текст' src={avatar}/>
             <div className={s.content}>
-                <div className={s.name}>{props.name}</div>
-                <div className={s.text}>{props.message}</div>
-                <div className={s.time}>{props.time}</div>
+                <div className={s.name}>{name}</div>
+                <div className={s.text}>{message}</div>
+                <div className={s.time}>{time}</div>
             </div>
         </div>
     )

@@ -9,3 +9,11 @@
 .errorText {
     color: red;
 }
+
+.greetItems {
+    padding: 10px;
+}
+
+.greetItems button {
+    margin-left: 5px;
+}

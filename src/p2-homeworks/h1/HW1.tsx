@@ -4,12 +4,20 @@ import {Message} from "./Message"
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'userName',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum natus neque provident suscipit! Aspernatur assumenda consequuntur delectus dolorem doloribus eos incidunt ipsam, labore placeat praesentium provident quia suscipit vel.',
+    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     time: '22:00',
 }
 
 
 function HW1() {
+
+    const {
+        avatar,
+        name,
+        time,
+        message
+    } = messageData;
+
     return (
         <div>
             <hr/>
@@ -18,10 +26,10 @@ function HW1() {
             {/*should work (должно работать)*/}
 
             <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
+                avatar={avatar}
+                name={name}
+                message={message}
+                time={time}
             />
 
             <hr/>
