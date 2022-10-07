@@ -4,7 +4,7 @@ import {Message} from "./Message"
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'userName',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    message: 'Lorem ipsum dolor sit amet',
     time: '22:00',
 }
 
